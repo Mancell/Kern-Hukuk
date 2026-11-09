@@ -1,0 +1,5 @@
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+httpx>=0.27,<1.0      # bedesten.adalet.gov.tr, OpenAlex, KİK, Resmî Gazete
+curl_cffi>=0.7,<1.0   # hudoc.echr.coe.int (WAF httpx'in TLS imzasını engelliyor)
+PyMuPDF>=1.24,<2.0    # PDF olarak dönen karar metnini çözmek için (ictihat.py)
